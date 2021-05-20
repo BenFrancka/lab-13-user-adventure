@@ -12,7 +12,7 @@
     <title>Lab 13 User Adventure</title>
 </head>
 
-<body>
+<body class="char-page">
     <header>
         <h2>
             Welcome to the Clout Adventure!
@@ -20,12 +20,15 @@
     </header>
     <main>
         <section>
-            <form id="user-form">
+            
+            <form class="user-form" id="user-form">
                 <label>Name <input name="user-name"></input></label>
-                <label><input type="radio" name="user-class" value="data-wrangler"/>Data Wrangler</label>
-                <label><input type="radio" name="user-class" value="techno-wizard"/>Techno Wizard</label>
-                <label><input type="radio" name="user-class" value="internet-troll"/>Internet Troll</label>
-                <label><input type="radio" name="user-class" value="tiktok-influencer"/>Tik-Tok Influencer</label>
+                <div class="div-grid">  
+                    <label><input class="pics" type="radio" name="user-class" value="data-wrangler"/><img src="./assets/datawrangler.png"><p>Data Wrangler</p> </label>
+                    <label><input class="pics" type="radio" name="user-class" value="techno-wizard"/><img src="./assets/technowizard.png"><p>Techno Wizard</p></label>
+                    <label><input class="pics" type="radio" name="user-class" value="internet-troll"/><img src="./assets/troll.png"><p>Internet Troll</p> </label>
+                    <label><input class="pics" type="radio" name="user-class" value="tiktok-influencer"/><img src="./assets/tiktok.png"> <p>Tik-Tok Influencer</p></label>
+                </div>
                 <button>Play!</button>
             </form>
         </section>
