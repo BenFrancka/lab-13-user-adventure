@@ -1,10 +1,16 @@
-main {
+.char-page {
+background-image: url(../assets/cyberBackground.jpeg);
+background-repeat: no-repeat;
+background-size: 110%;
+overflow: hidden;
+}
+.char-page main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header {
+.char-page header {
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -14,7 +20,7 @@ h2 {
     font-size: 2em;
 }
 
-section {
+.char-page section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,17 +29,40 @@ section {
 }
 
 
-form {
+.char-page form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    color: aliceblue;
 }
 
-input {
+.char-page input {
     margin-top: 10px;
+
 }
 
-button {
+.char-page button {
     margin: 10px;
 }
+.user-form img {
+    height: 200px;
+}
+.pics {
+    display: none;
+  }
+  
+  input:checked + img {
+    border: solid 3px
+    yellow
+  }
+
+  .div-grid {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 30px;
+      justify-self: center;
+      text-align: center;
+  }
+  
