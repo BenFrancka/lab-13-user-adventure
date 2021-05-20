@@ -5,7 +5,7 @@ const monsters = {
         top: '89%',
         left: '44%'
     },
-    image: '',
+    image: 'something.jpg',
     description: `
         You walk into a dark industrial basement, phone held to record your venture.  You see piles of machine parts in the corners. There is a dank smell like a expired dairy product.  There is no sound but for the heavy echos of your footsteps and the thump of your heartbeat. You steady yourself, take a deep breath, and say "Don't forget to like, comment, and subscribe," as you hear a menacing growl from somewhere off in the darkness.  What do you do?
     `,
@@ -40,7 +40,7 @@ const shopping = {
         top: '17%',
         left: '37%'
     },
-    image: '',
+    image: 'appleStore.jpg',
     description: `
         You really need to get your computer fixed, but it is black friday and the apple store is bound to be packed.  That is why you camped outside the store all night to be the first in line when they open. You are alone but for a news van setting up to cover the black friday madness. As a putupon "genius" opens the doors to the oasis of modern design and technology, you hear a mob of what you assume are desperate consumers.  You turn to see a shambling horde of zombies.  Rotten flesh drips from their haggard frames like banana peels. They only want to consume one thing: your brains! What do you do?
     `,
@@ -76,7 +76,7 @@ const dragon = {
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: 'dragon.jpg',
     description: `
         You step outside your building into the morning sunlight. You squint from a combination of hangover and the intensity of the morning sun, and begin walking toward the coffee shop up the road.  Suddenly the sun is gone as a gargantuan dragon swoops overhead and lands on the ground before you.  Steam rises from its nostrils in plumes.  You stand, dumbfoudned, as it preens a bus-sized, pebbled leather wing. The dragon looks down at you with glowing golden eyes, and growls at you with a voice that shakes the windows of the houses around you. "Speak, tiny monkey." What do you do?
     `,
