@@ -7,6 +7,7 @@ const user = getUser();
 renderHeader();
 for (let quest of quests){
     const li = document.createElement('li');
+    li.classList.add('quest-links');
     
     if (user.complete[quest.id]) {
         const span = document.createElement('span');

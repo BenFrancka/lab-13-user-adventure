@@ -21,7 +21,16 @@ questHeader.textContent = quest.title;
 questImg.src = `../assets/${quest.image}`;
 questP. textContent = quest.description;
 
+questHeader.classList.add('quest-title');
+
+questImg.classList.add('quest-image');
+questImg.style.width = 'auto';
+questImg.style.height = '500px';
+
+questP.classList.add('quest-p');
+
 const playerChoiceForm = document.createElement('form');
+playerChoiceForm.classList.add('choice-form');
 
 for (let choice of quest.choices) {
     const label = document.createElement('label');
@@ -35,6 +44,7 @@ for (let choice of quest.choices) {
 }
 
 const choiceButton = document.createElement('button');
+choiceButton.classList.add('choice-button');
 choiceButton.textContent = 'Make Your Choice';
 playerChoiceForm.append(choiceButton);
 
