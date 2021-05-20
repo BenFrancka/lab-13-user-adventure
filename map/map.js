@@ -24,3 +24,7 @@ for (let quest of quests){
     if (completeAll() === true)
         window.location = '../results';
 }
+
+if (Number(user.clout) < 1){
+    window.location = '../results';
+}
