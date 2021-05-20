@@ -36,8 +36,8 @@ export function completeAll() {
     return (true);
 }
 
-export function completeQuest(Id) {
+export function completeQuest(id) {
     const user = getUser();
-    user.completed[Id] = true;
+    user.completed[id] = true;
     setUser(user);
 }

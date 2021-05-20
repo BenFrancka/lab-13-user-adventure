@@ -1,5 +1,5 @@
 import quests from '../data/data.js';
-import { findById } from '../utils.js'
+import { findById } from '../utils.js';
 import { /*getUser*/ changeClout, completeQuest } from '../local-storage-utils.js';
 //import { renderHeader } from '../render-header.js';
 
