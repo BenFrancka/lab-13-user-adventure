@@ -22,7 +22,6 @@ export function changeClout(value) {
 }
 
 export function cloutDeath(value) {
-    console.log(value);
     if (Number(value) < 1)
         return (true);
     return (false);
