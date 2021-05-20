@@ -42,7 +42,7 @@ const shopping = {
     },
     image: 'appleStore.jpg',
     description: `
-        You really need to get your computer fixed, but it is black friday and the apple store is bound to be packed.  That is why you camped outside the store all night to be the first in line when they open. You are alone but for a news van setting up to cover the black friday madness. As a putupon "genius" opens the doors to the oasis of modern design and technology, you hear a mob of what you assume are desperate consumers.  You turn to see a shambling horde of zombies.  Rotten flesh drips from their haggard frames like banana peels. They only want to consume one thing: your brains! What do you do?
+        You really need to get your computer fixed, but it is black friday and the apple store is bound to be packed.  That is why you camped outside the store all night to be the first in line when they open. You are alone but for a news van setting up to cover the black friday madness. As a putupon "genius" opens the doors to the oasis of modern design and technology, you hear a mob of what you assume are desperate consumers.  You turn to see a shambling horde of zombies.  Rotten flesh drips from their haggard frames in sheets. They only want to consume one thing: your brains! What do you do?
     `,
     choices: [{
         id: 'fight',
