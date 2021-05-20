@@ -30,7 +30,7 @@ export function cloutDeath(value) {
 export function completeAll() {
     const user = getUser();
     for (let quest of quests) {
-        if (!user.completed[quest.id])
+        if (!user.complete[quest.id])
             return (false);
     }
     return (true);
@@ -38,6 +38,6 @@ export function completeAll() {
 
 export function completeQuest(id) {
     const user = getUser();
-    user.completed[id] = true;
+    user.complete[id] = true;
     setUser(user);
 }

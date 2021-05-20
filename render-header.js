@@ -1,4 +1,4 @@
-import { getUser } from './local-storage-utils';
+import { getUser } from './local-storage-utils.js';
 
 export function renderHeader() {
     const header = document.querySelector('header');
@@ -9,5 +9,6 @@ export function renderHeader() {
 
     name.textContent = `Name: ${user.name}`;
     clout.textContent = `Clout: ${user.clout}`;
-    header.appendChild(div.append(name, clout));
+    div.append(name, clout);
+    header.append(div);
 }

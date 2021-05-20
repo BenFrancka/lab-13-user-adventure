@@ -1,18 +1,17 @@
 import quests from '../data/data.js';
 import { findById } from '../utils.js';
-import { /*getUser*/ changeClout, completeQuest } from '../local-storage-utils.js';
-//import { renderHeader } from '../render-header.js';
+import { getUser, changeClout, completeQuest } from '../local-storage-utils.js';
+import { renderHeader } from '../render-header.js';
 
-//const user = getUser();
+const user = getUser();
 
-//renderHeader(user);
+renderHeader();
 
 const main = document.querySelector('main');
 
 const searchParams = new URLSearchParams(window.location.search);
 
 const id = searchParams.get('id');
-
 
 const quest = findById(quests, id);
 
@@ -60,7 +59,7 @@ playerChoiceForm.addEventListener('submit', (event) => {
     const redirectButton = document.createElement('button');
     redirectButton.textContent = 'Back to the Map';
     redirectButton.addEventListener('click', () => {
-        window.location = './map';
+        window.location = '../map';
     });
 
     resultsDiv.append(redirectButton);
