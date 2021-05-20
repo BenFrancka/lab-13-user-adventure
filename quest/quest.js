@@ -28,9 +28,7 @@ for (let choice of quest.choices) {
     const input = document.createElement('input');
     input.type = 'radio';
     input.name = 'choice';
-
     input.value = choice.id;
-
     label.append(choice.description, input);
     playerChoiceForm.append(label);
 
