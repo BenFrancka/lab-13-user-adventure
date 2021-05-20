@@ -4,9 +4,6 @@ import { setUser } from './local-storage-utils.js';
 
 const form = document.querySelector('#user-form');
  
-form.addEventListener('mouse-over', (e) => {
-    
-}
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -31,7 +28,7 @@ form.addEventListener('submit', (e) => {
         class: userClass,
         clout: Number(`${userClout}`),
         swag: 10,
-        complete: {},
+        complete: {}
     };
     setUser(userObj);
     window.location.replace('./map');
