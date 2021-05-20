@@ -22,9 +22,10 @@ export function changeClout(value) {
 }
 
 export function cloutDeath(value) {
-    if (value < 1)
-        return (false);
-    return (true);
+    console.log(value);
+    if (Number(value) < 1)
+        return (true);
+    return (false);
 }
 
 export function completeAll() {
