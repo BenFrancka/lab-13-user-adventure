@@ -8,7 +8,7 @@ export const cloutMessage = {
 };
 
 export function getEndingMessage(user) {
-    let finalMessage = `Congrats ${user.class} ${user.name}, you finsihed the game! `;
+    let finalMessage = `Congrats ${user.class} ${user.name}, you finished the game! `;
     finalMessage = finalMessage + `${evalClout(user)}`;
     return (finalMessage);
 }

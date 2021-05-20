@@ -1,5 +1,5 @@
 .map-background {
-    background-image: url(../assets/map2.jpg);
+    background-image: url(../assets/city.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden;
@@ -11,3 +11,10 @@
     align-content: center;
     align-items: center;
 }
+
+.quest-links {
+    font-size: 4rem;
+    color: lawngreen;
+    background: rgba(240, 128, 128, 0.219);
+}
+

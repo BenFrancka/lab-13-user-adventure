@@ -7,6 +7,7 @@ const user = getUser();
 renderHeader();
 for (let quest of quests){
     const li = document.createElement('li');
+    li.classList.add('quest-links');
     
     if (user.complete[quest.id]) {
         const span = document.createElement('span');
@@ -15,16 +16,17 @@ for (let quest of quests){
         li.appendChild(span);
     }
     else {
-        const a = document.createElement('a');
-        a.href = `../quest/?id=${quest.id}`;
-        a.textContent = quest.title;
-        li.append(a);
+        if (user.clout >= quest.requiredClout){
+            const a = document.createElement('a');
+            a.href = `../quest/?id=${quest.id}`;
+            a.textContent = quest.title;
+            li.append(a);
+        }
     }
     questLog.append(li);
     if (completeAll() === true)
         window.location = '../results';
 }
-
 if (Number(user.clout) < 1){
     window.location = '../results';
 }
