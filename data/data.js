@@ -110,63 +110,31 @@ const mars = {
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'dragon.jpg',
-    description: `
-        You step outside your building into the morning sunlight. You squint from a combination of hangover and the intensity of the morning sun, and begin walking toward the coffee shop up the road.  Suddenly the sun is gone as a gargantuan dragon swoops overhead and lands on the ground before you.  Steam rises from its nostrils in plumes.  You stand, dumbfoudned, as it preens a bus-sized, pebbled leather wing. The dragon looks down at you with glowing golden eyes, and growls at you with a voice that shakes the windows of the houses around you. "Speak, tiny monkey." What do you do?
-    `,
+    image: 'mars.png',
+    description: `You invested all of your money in DOGE coin and Elon sends you to Mars!`,
     choices: [{
-        id: 'befriend',
-        description: 'Try to befriend the dragon',
-        result: 'You stutter out a gretting.  The dragon rears its head and you prepare for the worst. The dragon bows in aquiecense, and growls an affirmation of friendship. Gain 50 clout: You are friends with a freaking dragon!',
+        id: 'celebrate',
+        description: 'Celebrate going into orbit with a shot',
+        result: 'You take a drink as the rocket is in lift off and accidentally knock a control panel with your hip. This causes the rocket to crash burn.',
         clout: 50
     }, {
-        id: 'selfie',
-        description: 'Take a Selfie with the Dragon',
-        result: 'You turn your back to the dragon, and snap a selfie. Lose 20 clout.  Dragons do not take selfies',
-        clout: -20
+        id: 'death',
+        description: 'You take your helmet off for the world to see you.',
+        result: 'The vacuum of space causes you to implode.',
+        clout: -500
     }, {
-        id: 'distract',
-        description: 'Try to distract the dragon with the flash on your phone',
-        result: 'Your phone promptly fades to black as you remember that it was only at 5 percent battery when you stepped outside. Whatever you were trying to do promptly puts you back at square one. Lose 10 clout.',
-        clout: -10
+        id: 'landing',
+        description: 'You arrive on Mars with a safe landing.',
+        result: 'You are greeted with a squad of friendly robots and live happily ever after.',
+        clout: 100
     }]
 };
-const scum = {
-    id: 'scum',
-    title: 'scum',
-    requiredClout: 10,
-    map: {
-        top: '31%',
-        left: '5%'
-    },
-    prerequisites: ['dragon', 'monsters', 'shopping'],
-    image: 'dragon.jpg',
-    description: `
-        You step outside your building into the morning sunlight. You squint from a combination of hangover and the intensity of the morning sun, and begin walking toward the coffee shop up the road.  Suddenly the sun is gone as a gargantuan dragon swoops overhead and lands on the ground before you.  Steam rises from its nostrils in plumes.  You stand, dumbfoudned, as it preens a bus-sized, pebbled leather wing. The dragon looks down at you with glowing golden eyes, and growls at you with a voice that shakes the windows of the houses around you. "Speak, tiny monkey." What do you do?
-    `,
-    choices: [{
-        id: 'befriend',
-        description: 'Try to befriend the dragon',
-        result: 'You stutter out a gretting.  The dragon rears its head and you prepare for the worst. The dragon bows in aquiecense, and growls an affirmation of friendship. Gain 50 clout: You are friends with a freaking dragon!',
-        clout: 50
-    }, {
-        id: 'selfie',
-        description: 'Take a Selfie with the Dragon',
-        result: 'You turn your back to the dragon, and snap a selfie. Lose 20 clout.  Dragons do not take selfies',
-        clout: -20
-    }, {
-        id: 'distract',
-        description: 'Try to distract the dragon with the flash on your phone',
-        result: 'Your phone promptly fades to black as you remember that it was only at 5 percent battery when you stepped outside. Whatever you were trying to do promptly puts you back at square one. Lose 10 clout.',
-        clout: -10
-    }]
-};
+
 const quests = [
     monsters, 
     shopping,
     dragon,
-    mars,
-    scum
+    mars
 ];
 
 
