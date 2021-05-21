@@ -60,10 +60,13 @@ playerChoiceForm.addEventListener('submit', (event) => {
     completeQuest(quest.id);
 
     const resultsDiv = document.createElement('div');
+    resultsDiv.classList.add('results-display');
     resultsDiv.textContent = choiceSelection.result;
 
     const redirectButton = document.createElement('button');
     redirectButton.textContent = 'Back to the Map';
+    redirectButton.classList.add('choice-button');
+
     redirectButton.addEventListener('click', () => {
         window.location = '../map';
     });
