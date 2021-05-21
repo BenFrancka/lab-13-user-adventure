@@ -153,3 +153,13 @@ h2 {
   .results-background {
       background-image: url(../assets/5g.png);
   }
+
+  .results-display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 3rem;
+      text-align: center;
+      color: orangered;
+      background-color:rgba(255, 0, 0, 0.192);
+  }
