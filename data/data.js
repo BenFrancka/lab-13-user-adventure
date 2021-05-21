@@ -8,7 +8,7 @@ const monsters = {
     },
     image: 'something.jpg',
     description: `
-        You walk into a dark industrial basement, phone held to record your venture.  You see piles of machine parts in the corners. There is a dank smell like a expired dairy product.  There is no sound but for the heavy echos of your footsteps and the thump of your heartbeat. You steady yourself, take a deep breath, and say "Don't forget to like, comment, and subscribe," as you hear a menacing growl from somewhere off in the darkness.  What do you do?
+        You walk into a dark industrial basement, phone held to record your venture.  You see piles of machine parts in the corners. There is a dank smell like an expired dairy product.  There is no sound but for the heavy echos of your footsteps and the thump of your heartbeat. You steady yourself, take a deep breath, and say "Don't forget to like, comment, and subscribe," as you hear a menacing growl from somewhere off in the darkness.  What do you do?
     `,
     choices: [{
         id: 'flee',
@@ -21,7 +21,7 @@ const monsters = {
         id: 'investigate',
         description: 'Investigate the noise',
         result: `
-            You make your way towards the noise, whispering to your future subscribers as the scene slowy illuminates before you.  You see a group of small, cat-like creatures, covered in reptilian scales, three eyes instead of two. They rub against your leg and purr.  Gain 10 clout: the net is crazy for cats, even weird ones.
+            You make your way towards the noise, whispering to your future subscribers as the scene slowy illuminates before you.  You see a group of small, cat-like creatures, covered in reptilian scales, with three eyes instead of two. They rub against your leg and purr.  Gain 10 clout: the net is crazy for cats, even weird ones.
         `,
         clout: 10
     }, {
@@ -50,7 +50,7 @@ const shopping = {
         id: 'fight',
         description: 'Use your laptop as a club',
         result: `
-            You feel the weight of your macbook in your hands, suddenly regretting that the computer was engineered to be so light and slim. You throw caution to the wind and grip the laptop with both hands, and start swinging.  Gain 10 clout.  It would have been 20, but you can't post about this later with a broken computer.
+            You feel the weight of your macbook in your hands, suddenly regretting that the computer was engineered to be so light and slim. You throw caution to the wind, grip the laptop tightly, and start swinging.  Gain 10 clout.  It would have been 20, but you can't post about this later with a broken computer.
         `,
         clout: 10
     }, {
@@ -81,12 +81,12 @@ const dragon = {
     prerequisites: ['dragon', 'monsters'],
     image: 'dragon.jpg',
     description: `
-        You step outside your building into the morning sunlight. You squint from a combination of hangover and the intensity of the morning sun, and begin walking toward the coffee shop up the road.  Suddenly the sun is gone as a gargantuan dragon swoops overhead and lands on the ground before you.  Steam rises from its nostrils in plumes.  You stand, dumbfoudned, as it preens a bus-sized, pebbled leather wing. The dragon looks down at you with glowing golden eyes, and growls at you with a voice that shakes the windows of the houses around you. "Speak, tiny monkey." What do you do?
+        You step outside your building into the morning sunlight. You squint from a combination of hangover and the intensity of the morning sun, and begin walking toward the coffee shop up the road.  Suddenly the sun is gone as a gargantuan dragon swoops overhead and lands on the ground before you.  Steam rises from its nostrils in plumes.  You stand, dumbfoudned, as it preens a bus-sized, pebbled leather wing. The dragon looks down at you with glowing golden eyes, and growls at you with a voice that shakes the windows of the houses around you. "Speak, little orc." What do you do?
     `,
     choices: [{
         id: 'befriend',
         description: 'Try to befriend the dragon',
-        result: 'You stutter out a gretting.  The dragon rears its head and you prepare for the worst. The dragon bows in aquiecense, and growls an affirmation of friendship. Gain 50 clout: You are friends with a freaking dragon!',
+        result: 'You stutter out a gretting.  The dragon rears its head and you prepare for the worst. The dragon bows in aquiescence, and growls an affirmation of friendship. Gain 50 clout: You are friends with a freaking dragon!',
         clout: 50
     }, {
         id: 'selfie',
@@ -115,17 +115,17 @@ const mars = {
     choices: [{
         id: 'celebrate',
         description: 'Celebrate going into orbit with a shot',
-        result: 'You take a drink as the rocket is in lift off and accidentally knock a control panel with your hip. This causes the rocket to crash burn.',
+        result: 'You take a drink as the rocket is in lift off and accidentally knock a control panel with your hip. This causes the rocket to crash burn. Your accident gets millions of views. Gain 50 clout.',
         clout: 50
     }, {
         id: 'death',
         description: 'You take your helmet off for the world to see you.',
-        result: 'The vacuum of space causes you to implode.',
+        result: 'The vacuum of space causes you to implode. You cannot claim clout if you are dead. Lose 500 clout.',
         clout: -500
     }, {
         id: 'landing',
-        description: 'You arrive on Mars with a safe landing.',
-        result: 'You are greeted with a squad of friendly robots and live happily ever after.',
+        description: 'You disembark on Mars after a long journey.',
+        result: 'You are greeted with a squad of friendly robots and live happily ever after. Livestreaming from another planet changed the game entirely! Gain 100 clout.',
         clout: 100
     }]
 };
