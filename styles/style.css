@@ -5,7 +5,6 @@ background-color: #0E0321;
 background-image: url(../assets/cyberBackground.jpeg);
 background-repeat: no-repeat;
 background-size: cover;
-overflow: hidden;
 }
 .char-page main {
     display: flex;
