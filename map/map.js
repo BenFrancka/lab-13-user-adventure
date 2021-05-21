@@ -30,3 +30,6 @@ for (let quest of quests){
 if (Number(user.clout) < 1){
     window.location = '../results';
 }
+if (user.wins === 3 && user.clout < 50) {
+    window.location = '../results';
+}

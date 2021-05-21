@@ -28,7 +28,8 @@ form.addEventListener('submit', (e) => {
         class: userClass,
         clout: Number(`${userClout}`),
         swag: 10,
-        complete: {}
+        complete: {},
+        wins: 0
     };
     setUser(userObj);
     window.location.replace('./map');
